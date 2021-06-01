@@ -8,6 +8,9 @@ import (
 
 func main() {
 	r := gin.Default()
-	router.RouteHome(r.Group(constants.ApiBasePath))
-	r.Run()
+	router.RouteMember(r.Group(constants.ApiBasePath))
+	err := r.Run()
+	if err != nil {
+		return
+	}
 }

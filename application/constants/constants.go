@@ -1,7 +1,7 @@
 package constants
 
 const (
-	ApiBasePath = "api"
-	ApiVersion = "v1"
-	HomeUrl = "/"
+	ApiBasePath = "api/v1/web"
+	HomeUrl     = "/"
+	MembersUrl  = "/members"
 )
